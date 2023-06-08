@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyProject</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="scss/_variables.scss">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="Logo.png" alt="Bootstrap" width="80" height="80"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shopping</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Living
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sofa</a></li>
+                            <li><a class="dropdown-item" href="#">Chairs</a></li>
+                            <li><a class="dropdown-item" href="#">Tables</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Living</a></li>
+            <li class="breadcrumb-item"><a href="#">Sofas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Fabric Sofa</li>
+        </ol>
+    </nav>
+    <div class="container1">
+        <div class="images">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Sofa1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Sofa2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Sofa3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Sofa4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h2>AFIFA BROWN SOFA</h2>
+            <p>Fabric Sofa,Living,Sofa</p><br>
+            <h6><i class="bi bi-currency-rupee">55000</i>-<i class="bi bi-currency-rupee">65000</i></h6><br>
+            <select class="form-select" aria-label="Default select example" style="border-color: red;">
+                <option selected >Choose an Option</option>
+                <option value="1">Single Seated</option>
+                <option value="2">Double Seated</option>
+                <option value="3">Three Seated</option>
+              </select><br><br>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter Pincode" aria-label="Recipient's username" aria-describedby="button-addon2" id="pinc">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="color:#ffffff;background-color: red;" onclick="check()">Change</button>
+              </div>
+              <p id="show"></p>
+              <h6>Quantity</h6>
+              <div id="values"></div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+               <a href="form.html"> <button class="btn btn-primary" type="button" style="background-color: red; border: 0;">ADD TO CART</button></a>
+              </div><br>
+              <h5><i class="bi bi-heart" >Add to WishList</i></h5>
+        </div>
+      
+          
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+
+</body>
+
+</html>
